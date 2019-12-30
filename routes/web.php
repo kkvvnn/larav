@@ -56,3 +56,6 @@ Route::get('/helloworld', function () {
 Route::get('/array', function () {
     return [1,2,3];
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
